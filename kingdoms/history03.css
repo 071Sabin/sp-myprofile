@@ -1,0 +1,405 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+main {
+    flex-grow: 1;
+}
+
+.top-navigation ul {
+    margin-top: 0;
+    padding-left: 0;
+    padding: 1.5em 0;
+    display: flex;
+    flex-wrap: wrap;
+    /* border-bottom: 10px solid white; */
+    justify-content: space-between;
+    background-color: #3d6098;
+}
+
+
+/* .top-navigation {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+} */
+
+.top-navigation ul a {
+    /* font-family: Imprint MT Shadow; */
+    font-family: Papyrus;
+    color: white;
+    /* font-size: 1.5em; */
+}
+
+.top-logo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 0;
+    margin-left: 2%;
+    margin-right: auto;
+}
+
+.top-heading {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    padding: 50vw 0;
+    /* padding-bottom: 50vw; */
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    text-shadow: 12px 8px 5px black;
+    background-blend-mode: multiply;
+    background: linear-gradient(to left, rgba(255, 0, 0, 1), rgba(0, 0, 255, 0.9)), url(images/gorkhas1.jpg) center / cover no-repeat;
+}
+
+.top-heading h1 {
+    font-family: Maiandra GD;
+}
+
+.top-heading p {
+    font-family: Maiandra GD;
+}
+
+main {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* TOGGLE BUTTON!! */
+
+input {
+    -webkit-appearance: none;
+    position: relative;
+    width: 40px;
+    height: 25px;
+    border-radius: 25px;
+    background-color: grey;
+    transition: .3s;
+    outline: none;
+    cursor: pointer;
+}
+
+input::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    transition: left .3s;
+}
+
+input:checked {
+    background-color: rgb(62, 75, 254);
+    /* background: linear-gradient(to left, rgb(73, 73, 253), rgb(255, 78, 78)); */
+}
+
+input:checked::after {
+    left: 70%;
+    /* background: linear-gradient(to left, blue, red); */
+}
+
+.timeline article {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 5px 8px 10px rgb(210, 210, 210);
+    padding: 1% 0.5%;
+    border-radius: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.history-of-nepal {
+    margin: 15% 0 0 0;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 2%;
+    box-shadow: 6px 6px 10px rgb(210, 210, 210);
+}
+
+.read-more {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding: 0.3%;
+    margin: 1%;
+}
+
+.history-of-nepal,
+#explore-more,
+#more-articles {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gnepal {
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+
+
+/* #####################
+footer of the page
+######################## */
+
+.back-to-top {
+    border: 2px solid black;
+    padding: 0 0.3%;
+    border-radius: 50%;
+}
+
+.back-to-top:hover {
+    border: 2px solid white;
+    color: white;
+    background-color: black;
+}
+
+.footer {
+    padding-top: 10px;
+}
+
+.itisfoot {
+    background-color: rgb(217, 217, 217);
+    padding-top: 0;
+    margin-top: 3%;
+}
+
+/* #explore-more ul,
+#more-articles ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+#explore-more,
+#more-articles {
+    margin: 0 15% 0 3%;
+    padding: 0 1em 1em 1em;
+    padding-top: 5%;
+    padding-bottom: 5%;
+} */
+
+#explore-more {
+    border-bottom: 2px solid blue;
+}
+
+#explore-more li,
+#more-articles li {
+    border-bottom: 3px solid rgb(242, 241, 241);
+}
+
+#more-articles {
+    padding-left: 1em;
+    padding-right: 1em;
+    border-bottom: 2px solid rgb(179, 60, 60);
+}
+
+/* address {
+    text-align: center;
+    margin: 0;
+    margin-top: 5vw;
+    padding: 0 1em 0 1em;
+} */
+i{
+    font-size: 1.5em;
+    margin: 0 10px;
+    width: fit-content;
+    height: auto;
+}
+
+.bi-facebook:hover{
+    color: 	#1778f2;
+}
+
+.bi-twitter:hover{
+    color: #1DA1F2;
+}
+
+.bi-instagram:hover{
+    background: linear-gradient(#feda75,  #fa7e1e, #d62976, #962fbf, #4f5bd5);
+    border-radius: 1rem;
+    color: white;
+}
+
+.fb,
+.twt,
+.insta {
+    width: 5vw;
+    border-radius: 50%;
+    margin: 1%;
+}
+
+.media ul {
+    padding-left: 0;
+    margin: 0;
+}
+
+.media,
+.terms-and-footnote {
+    text-align: center;
+}
+
+.media {
+    margin: 5% 0 0 0;
+}
+
+.terms {
+    padding: 0 1%;
+    border-right: 2px solid rgb(155, 39, 39);
+}
+
+.terms-and-footnote {
+    margin-top: 2%;
+}
+
+.privacy {
+    padding-left: 1%;
+}
+
+
+/* #####################
+media queries
+######################## */
+
+
+/* DESKTOP */
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    main {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .top-navigation {
+        position: fixed;
+        width: 100%;
+    }
+    .top-logo {
+        margin-right: auto;
+    }
+    .top-navigation ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .top-navigation a {
+        opacity: 0.8;
+        color: rgb(208, 208, 207);
+    }
+    .top-navigation a:hover {
+        opacity: 1;
+        transition: 0.2s;
+        transform: scale(1.3);
+        color: white;
+    }
+    .top-heading {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        padding: 31.5vh 0;
+        margin-top: 5%;
+    }
+    .gnepal {
+        max-width: 50%;
+        display: flex;
+        /*  */
+        margin: auto;
+        /*  */
+    }
+    .timeline,
+    .history-of-nepal {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3vw;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    /* #explore-more ul {
+        list-style-type: none;
+    } */
+
+
+    #explore-more {
+        margin: 3% 5% 0 0;
+        padding: 0;
+        width: 300px;
+        max-width: auto;
+        border: none;
+        border-right: 2px solid rgb(55, 55, 156);
+    }
+    #explore-more a:hover {
+        transition: 0.3s;
+        border-bottom: 2px solid rgb(46, 46, 131);
+    }
+    #more-articles {
+        margin: 0;
+        padding: 0;
+        width: 300px;
+        max-width: auto;
+        border-bottom: none;
+    }
+    #more-articles a:hover {
+        border-bottom: 2px solid rgb(179, 60, 60);
+    }
+    #explore-more ul li,
+    #more-articles ul li {
+        border: none;
+    }
+    .footer-explore {
+        margin-top: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    /* address {
+        margin: 5% 0 0 0;
+        padding: 0;
+        margin-top: 5%;
+        text-align: center; */
+    
+    .media {
+        margin: 3% 0 0 0;
+    }
+    .terms-and-footnote {
+        margin-top: 1%;
+    }
+    .terms:hover,
+    .privacy:hover {
+        /* border-bottom: 2px solid rgb(179, 60, 60); */
+        text-decoration: underline;
+        /* padding-bottom: 0; */
+    }
+}
+
+
+/* TABLET */
+
+
+/* @media screen and(min-width: 700px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+    #explore-more {
+        width: 40px;
+    }
+} */

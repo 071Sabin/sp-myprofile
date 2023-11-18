@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+i {
+  margin-left: 20px;
+}
+
+#nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5em;
+  box-shadow: 0 0 10px rgb(226, 226, 226);
+}
+#nav_bar #nav_mobile {
+  display: none;
+}
+#nav_bar ul {
+  list-style-type: none;
+  display: flex;
+  font-size: 20px;
+  margin-right: 20px;
+}
+#nav_bar ul, #nav_bar h1 {
+  margin-bottom: 0;
+}
+#nav_bar h1 {
+  margin-left: 20px;
+  font-weight: bold;
+}
+#nav_bar a:focus {
+  color: orange;
+}
+
+#mobile_nav_links {
+  display: none;
+  width: 100%;
+  margin-top: 20px;
+  position: absolute;
+  top: 10%;
+}
+
+img {
+  height: 430px;
+  width: 400px;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+}
+.main img {
+  height: 430px;
+  width: 400px;
+  box-shadow: 10px 10px 5px rgb(195, 195, 195);
+}
+.main .photo_intro {
+  margin-top: -100px;
+  width: 100vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .photo_intro .intro {
+  font-size: 20px;
+}
+.main .photo_intro img {
+  border-radius: 20px;
+}
+.main .photo_intro .icons a {
+  font-size: 1.5rem;
+}
+.main .photo_intro h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.expand-about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.433), rgba(0, 0, 0, 0.416)), url("/img/aboutbg.avif") no-repeat center/cover;
+}
+.expand-about .about {
+  padding: 10px 20px;
+  background-color: white;
+}
+.expand-about .about h1 {
+  border-bottom: 3px solid orange;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.expand-about .about p {
+  font-size: 20px;
+  margin-top: 20px;
+}/*# sourceMappingURL=scss2.css.map */

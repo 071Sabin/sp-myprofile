@@ -1,0 +1,406 @@
+*{
+    padding: 0;
+    margin: 0;
+    // box-sizing: border-box;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main{
+    margin: 0 auto;
+}
+
+// All <a> tags //
+nav, #mobile_nav_links{
+    a{
+        color: black;
+        text-decoration: none;
+    }
+    a:focus{
+        color: rgb(255, 166, 0);
+        transition: 0.3s ease;
+    }
+}
+
+// All icons //
+a i{
+    color: black;
+}
+
+//  All social site icons on focus //
+.bi-facebook:hover{
+    color: 	#0655ff;
+}
+.bi-twitter:hover{
+    color: #1DA1F2;
+}
+.bi-instagram:hover{
+    background-image: linear-gradient(150deg, #405DE6, #833AB4, #FF007F, #FFC107, white);
+}
+.bi-instagram:hover, .bi-github:hover, .bi-envelope-fill:hover{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bi-github:hover{
+    background-image: linear-gradient(white, rgb(104, 104, 104));
+}
+.bi-envelope-fill:hover{
+    background-image: linear-gradient(159deg, rgb(27, 255, 27),rgb(255, 69, 69), rgb(50, 50, 255), rgb(255, 255, 42));
+}
+.bi-skype:hover{
+   color: rgb(7, 139, 255);
+}
+
+header{
+    h1{
+        font-weight: bold;
+        padding: 0 5vw;
+    }
+
+    #nav_bar{
+        height: 5em;
+        box-shadow: 0px 0px 20px rgb(237, 237, 237);
+        font-size: 20px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        #pc_nav_links{
+            li{
+                display: inline-block;
+                margin: 0 0.5em;
+            }
+        }
+    }
+}
+
+// MOBILE NAVIGATION THREE BARS
+
+header{
+    #nav_mobile{
+        // border-radius: 10px;
+        padding: 0.2em;
+        margin: 0 20px;
+        background-color: white;
+        border: none;
+        position: relative;
+        transition: translate(-50%, -50%);
+        transition: transform 0.5s, opacity .5s, top .6s;
+        .bar{
+            width: 35px;
+            height: 4px;
+            border-radius: 20px;
+            background-color: black;
+            margin: 5px 0;
+        }
+    }
+
+    #mobile_nav_links{
+        box-shadow: 0px 2px 10px rgb(234, 234, 234);
+        background-color: white;
+        position: relative;
+        top: 10%;
+        li{
+            list-style-type: none;
+            text-align: center;
+            font-size:20px;
+        }
+    }
+
+    // Nav bars cross while clicking
+
+    .nav_mobile.active .first-bar{
+        transform: translate(-50%, -50%) rotate(-315deg);
+        transition: .5s;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    .nav_mobile.active .second-bar{
+        opacity: 0;
+    }
+
+    .nav_mobile.active .third-bar{
+        transform:translate(-50%, -50%) rotate(-225deg);
+        transition: .5s;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+
+    #nav_mobile, #mobile_nav_links{
+        display: none;
+    }
+} //header
+
+
+//  Main div with picture h1, and social links //
+
+.main{
+    height: 100vh;
+    margin-top: 15vh;
+    .photo_intro{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px;
+
+        .image{
+            margin: 20px;
+            img{
+                border-radius: 20px;
+                height: 22em;
+                width: 20.1em;
+                box-shadow: 5px 4px 20px rgb(36, 36, 36);
+            }
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+        }
+        .icons{
+            text-align: left;
+            width: 50%; 
+            font-size: 24px;
+            margin-left: 4vw;
+            h2{
+                font-size: 80px;
+                font-weight: bold;
+            }
+            p{
+                font-size: large;
+            }
+        }
+    }
+} 
+
+
+// ABOUT ME //
+.expand-about, .expand-portfolio{
+    height: 100vh;
+    // border: 2px solid red;
+}
+
+.expand-about{
+    display: flex;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/img/aboutbg.avif') center/cover no-repeat;   
+    margin-bottom: 60px;
+    // justify-content: center;
+    align-items: center;
+    img{
+        height: 300px;
+        width: 300px;
+        border: 2px solid orange;
+    }
+    .about{
+        background-color: #fff;
+        border: 1px solid grey;
+    }
+    .img-about{
+        display: flex;
+    }
+    .aboutHeading strong{
+        border-bottom: 3px solid orange;
+    }
+    .about{
+        text-align: center;
+        padding: 20px;
+        font-size: 20px;
+        p{
+            font-size: 18px;
+            margin-top: 20px;   
+        }
+    }
+}
+
+// Portfolio //
+
+.expand-portfolio{
+    text-align: center;
+    margin-bottom: 10px;
+    height: auto;
+    h1{
+        border-bottom: 3px solid orange;
+        display: inline-block;
+    }
+    .portfolio{
+        list-style-type: none;
+        box-shadow: 0px 0px 10px rgb(230, 230, 230);
+        nav{
+            font-size: 18px;
+            color: grey;
+            display: flex;
+            width: 70%;
+            margin: 0 auto;
+            padding: 15px 0;
+            justify-content: space-around;
+            li{
+                cursor: pointer;
+            }
+        }
+    }
+    #portfolio_container{
+        margin-top: 20px;
+        display: grid;
+        flex-wrap:wrap;
+        grid-template-columns: repeat(auto-fit, 300px);
+        grid-gap: 20px;
+        justify-content: center;;
+        .contents{
+            box-shadow: 3px 3px 6px rgb(232, 232, 232);
+            border-radius: 10px;
+            p{
+                margin-top: 5px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    cursor: pointer;
+                }
+            }
+        }
+        img{
+            height: 200px;
+            width: 300px;
+            border-radius: 10px 10px 0 0;
+            // border: 2px solid red;
+        }
+    }
+}
+
+// Move To Top button //
+.move-to-top{
+    display: none;
+    font-size: 22px;
+    position: fixed;
+    top: 90%;
+    left: 95%;
+    background-color: rgb(255, 255, 255);
+    i{
+        color: white;
+        background-color: black;
+        padding: 5px 5px;
+    }
+}
+
+// Footer //
+footer{
+    background-color: black;
+    padding: 20px;
+    div a i{
+        color: white;
+        font-size: 20px;
+        padding: 20px 10px;
+    }
+    p{
+        color: wheat;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+// PHONE CONTROL //
+@media (max-width:600px){
+
+    // FOR NAVIGATION BAR
+    body{
+        font-size: 16px;
+    }
+    header{
+        #nav_bar{
+            // box-shadow: none;
+
+            // Hide PC nav links
+            #pc_nav_links{
+                display: none;
+                box-shadow: none;
+            }
+
+            // Displaying nav-bar SP into center
+            h1{
+                width: 100vw;
+                font-size: 40px;
+                margin-left: 20%;
+                text-align: center;
+            }
+        }
+
+        // Displaying 3 bars
+        #nav_mobile{
+            display: block;
+        }
+        
+        // mobile-nav-menus display as block, and is set in JS
+        #mobile_nav_links{
+            transition: transform 0.3s ease-out;
+        }
+    }
+    .main{
+        height: 100%;
+        width: 100vw;
+        color: white;
+        margin-top: 0;
+        background-blend-mode:darken;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.305), rgba(0, 0, 0, 0.305)), url("/img/profile1.jpg") center / cover no-repeat;
+        .photo_intro{
+            display: flex;
+            margin:0;
+            flex-wrap: nowrap;
+            p{
+                width: 100vw;
+            }
+            .icons{
+                margin-top: 90%;
+                margin-bottom: 4vh;
+                width: 100vw;
+                h2{
+                    font-size: 34px;
+                }
+                p{
+                    font-size: 4vw;
+                }
+                i{
+                    font-size: 4vw;
+                }
+            }
+        }
+        i{
+            color: white;
+            font-size: 20px;
+        }
+        .image, img{
+            display: none;
+        }
+    }
+
+    // About section, paragraph align-left.
+    .expand-about{
+        height: 55vh;
+        margin-top: 10%;
+        .about{
+            p{
+                text-align: left; 
+            }
+        }
+    }
+ // Header ends here
+
+
+    .expand-portfolio{
+        height: fit-content;
+    }
+    .move-to-top{
+        left: 80%;
+    }
+    
+} // Media query

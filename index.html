@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sabin Panthi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <link rel="stylesheet" href="./css/sass/main.css">
+    <!-- <link rel="stylesheet" href="./css/scss2/scss2.css"> -->
+
+    <!-- Animations from animate.style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <header>
+        <nav id="nav_bar">
+            <h1 class="animate__animated animate__fadeInLeft">SP</h1>
+            <ul id="pc_nav_links" class="animate__animated animate__fadeInRight animate__slow">
+                <li id="nav_home" class="nav_home"><a href="#">Home</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li id="nav_about" class="nav_about"><a href="#expand_about">About</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li id="nav_portfolio" class="nav_portfolio"><a href="#expand_portfolio">Portfolio</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li id="nav_about" class="nav_about"><a href="#services">Services</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li id="nav_contact" class="nav_contact"><a href="#contacts">Contact</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href=""><i class="bi bi-moon"></i></a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </ul>
+
+            <button id="nav_mobile" class="nav_mobile" onclick="showMobileMenu()">
+                <div class="ham-menu">
+                    <div class="bar first-bar" id="bar"></div>
+                    <div class="bar second-bar"></div>
+                    <div class="bar third-bar"></div>
+                </div>
+            </button>
+        </nav>
+
+        
+        <div id="mobile_nav_links" class="mobile_nav_links animate__animated animate__slideInDown">
+            <ul>
+                <li id="mob" class="nav_home"><a href="#">Home</a></li><br>
+                <li id="mob" class="nav_about"><a href="#expand_about">About</a></li><br>
+                <li id="mob" class="nav_portfolio"><a href="#expand_portfolio">Portfolio</a></li><br>
+                <li id="mob" class="nav_services"><a href="#">Services</a></li><br>
+                <li id="mob" class="nav_contact"><a href="#contacts">Contact</a></li><br>
+            </ul>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="main">
+            <div class="photo_intro">
+                <div class="icons animate__animated animate__fadeInLeft animate__delay-.8s">
+                    <h2>Sabin Panthi</h2>
+                    <p class="intro">WEB & MOBILE APP DEVELOPER</p>
+                    <p><em>"There is always one more bug to fix."  – Ellen Ullman</em></p>
+                    <a href="https://www.facebook.com/071.sabin.panthi" target="_blank"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.twitter.com/PanthiSabin" target="_blank"><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/sabin_panthi" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.github.com/071Sabin" target="_blank"><i class="bi bi-github"></i></a>&nbsp;&nbsp;&nbsp;
+                    <a href="https://join.skype.com/invite/X783Hl2qBhmJ" target="_blank"><i class="bi bi-skype"></i></a>&nbsp;&nbsp;&nbsp;
+                </div>
+
+                <div class="image">
+                    <img class="profile1 animate__animated animate__swing" src="./img/profile1.jpg" alt="Profile Picture 1">
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="expand-about" id="expand_about">
+            <!-- <div class="img-about">
+                <img src="./img/about.jpg" alt="About">
+                <div class="info">
+                    <p><strong>Name:</strong> Sabin Panthi</p> 
+                </div>   
+            </div> -->
+
+            <div class="about">
+                <h1 class="aboutHeading animate__animated"><strong>About</strong></h1>
+                <p class="aboutPrg animate__animated animate__delay-0.3s">
+                    As a computer engineer, I specialize in designing, developing, and maintaining computer systems and software. 
+                    I have expertise in several areas of specialization, including web development, mobile application development, and database management. 
+                    In web development, I am proficient in HTML, CSS, and JavaScript, and can create visually appealing and functional websites. 
+                    In mobile application development.
+                </p>
+            </div>
+        </div>
+
+
+<!-- PORTFOLIO GOES HERE -->
+
+        <div class="expand-portfolio" id="expand_portfolio">
+            <div class="portfolio">
+                <h1 class="portfolioHeading animate__animated">Portfolio</h1>
+                <nav>
+                    <li>Photoshop</li>
+                    <li>Logo Design</li>
+                    <li>Websites</li>
+                </nav>
+            </div>
+
+            <div id="portfolio_container">
+                <!-- <div id="photoshop">
+                </div>
+
+                <div id="website">
+                </div> -->
+            </div>
+            
+        </div>
+
+
+
+<!-- SERVICES GOES HERE -->
+        <!-- <div class="services" id="services">
+            <h2>Services</h2>
+            <div class="services-lists">
+
+            </div>
+        </div> -->
+
+    </main>
+    
+
+
+
+    <a class="move-to-top" href="#nav_bar"><i class="bi bi-arrow-up-square"></i></a>
+
+    <footer id="contacts" class="contacts animate__animated animate__slower">
+        <div class="icons foot-icons animate__animated">
+            <p>Contacts</p>
+            <a href="https://www.facebook.com/071.sabin.panthi" target="_blank"><i class="bi bi-facebook"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.twitter.com/PanthiSabin" target="_blank"><i class="bi bi-twitter"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.instagram.com/sabin_panthi" target="_blank"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.github.com/071Sabin" target="_blank"><i class="bi bi-github"></i></a>&nbsp;&nbsp;&nbsp;
+            <a href="mailto: 071.sabin.panthi@gmail.com"><i class="bi bi-envelope-fill"></i></a>&nbsp;&nbsp;&nbsp;
+            <!-- <p><em>Sabin Panthi</em></p> -->
+        </div>
+        
+    </footer>
+
+    <script src="./js/javaScript.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(16, 16, 16);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cards{
+            /* background-color: rgb(0, 242, 255); */
+            width: fit-content;
+            padding: 20px;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            transform-style: preserve-3d;
+            transition: transform 0.5s ease;
+        }
+        .bi{
+            font-size: 100px;
+        }
+        .card1{
+            background-color: orange;
+            width: 150px;
+            height: 200px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        }
+        .card1 h1{
+            align-items: flex-end;
+        }
+        .bi{
+            justify-content: center;
+        }
+        .cards p{
+            display: none; 
+            justify-content: center;
+        }
+        .card:hover p{
+            display: block;
+            transform: rotateY(180deg);
+        }
+        .cards:hover .bi,.cards:hover h1{
+            display: none;
+        }
+        .cards>div:hover{
+            transform: rotatey(180deg);
+            transition: 0.8s;
+        }
+    </style>
+    <script>
+        var display = document.querySelector('.cards');
+        display.addEventListener('mouseenter', ()=>{
+            display.classList.add('hover');
+        });
+        card.addEventListener('mouseleave', () => {
+            display.classList.remove('hover');
+        });
+
+    </script>
+</head>
+<body>
+    <div class="cards">
+        <div class="card card1">
+            <p class="description">I am full stack developer with amazing frontend development using tailwind, scss etc.</p>
+            <i class="bi bi-filetype-html"></i>
+            <h1 class="icon">card1</h1>
+        </div>
+    </div>
+</body>
+</html>
